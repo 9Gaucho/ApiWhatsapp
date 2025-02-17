@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Sistema de Ponto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container login-container">
+        <h1>🔑 Login</h1>
+        <input type="text" id="username" placeholder="Usuário">
+        <input type="password" id="password" placeholder="Senha">
+        <button onclick="verificarLogin()">Entrar</button>
+        <p id="error-msg"></p>
+    </div>
+
+    <script>
+        function verificarLogin() {
+            const user = document.getElementById("username").value;
+            const pass = document.getElementById("password").value;
+
+            // Ajuste aqui o usuário e senha conforme sua necessidade
+            if (user === "admin" && pass === "123") {
+                // Se o login estiver correto, redireciona para a página de ponto
+                window.location.href = "ponto.html";
+            } else {
+                // Caso contrário, exibe a mensagem de erro
+                document.getElementById("error-msg").innerText = "Essa senha já é usada por outro usuário";
+            }
+        }
+    </script>
+</body>
+</html>

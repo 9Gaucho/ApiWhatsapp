@@ -1,0 +1,168 @@
+/* Resetando margens e padding para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4e5b6e, #2c3e50); /* Degradê azul e cinza */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container central */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    margin-bottom: 20px;
+}
+
+/* Logo da empresa */
+.logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Formulário */
+.form-container {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+/* Inputs e campos do formulário */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Botão de registro */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para a lista de histórico */
+.historico {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+#historico-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#historico-list li {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Estilo para o relógio */
+.relogio {
+    margin-bottom: 20px;
+}
+
+#time {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+/* Estilo para a mensagem de confirmação */
+#confirmation-message {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Tela de login */
+.registro-body {
+    background: linear-gradient(135deg, #4e5b6e, #2c3e50); /* Degradê para tela de login */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Adicionando mais estilo no formulário de login */
+#login-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#login-form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #2980b9;
+}

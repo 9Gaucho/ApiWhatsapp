@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ponto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="registro-body">
+    <div id="app-screen">
+        <div class="container">
+            <header>
+                <!-- Logo da empresa como link para voltar à tela de Login -->
+                <a href="index.html">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/61/ff/3561ffe0-262f-9704-0a30-50c16e6fce15/AppIcon-0-0-1x_U007epad-0-85-220.png/1200x600wa.png" alt="Logo da Empresa" class="logo">
+                </a>
+                <h1>Sistema de Ponto - MoinhoSul</h1>
+            </header>
+
+            <div class="relogio">
+                <h3>Hora Atual:</h3>
+                <div id="time">00:00:00</div>
+            </div>
+
+            <div class="form-container">
+                <h2>Registrar Entrada/Saída</h2>
+                <form id="ponto-form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                    <label for="data">Data:</label>
+                    <input type="text" id="data" name="data" disabled>
+
+                    <label for="hora">Hora:</label>
+                    <input type="text" id="hora" name="hora" disabled>
+
+                    <label for="tipo">Tipo:</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="entrada">Entrada</option>
+                        <option value="saida">Saída</option>
+                    </select>
+
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+
+            <div class="historico">
+                <h3>Histórico de Registros</h3>
+                <ul id="historico-list">
+                    <!-- Histórico de registros vai aparecer aqui -->
+                </ul>
+            </div>
+
+            <div id="confirmation-message" class="hidden">
+                <!-- Mensagem de confirmação do ponto registrado -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
